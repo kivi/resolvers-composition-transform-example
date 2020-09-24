@@ -1,0 +1,9 @@
+sources:
+  - name: Covidgraphql
+    handler:
+      graphql:
+        endpoint: https://covid-19.dava.engineer/api/graphql
+    transforms:
+      - resolversComposition:
+          - resolver: Query.*
+            composer: ./src/add-fields
