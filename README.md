@@ -4,7 +4,8 @@ Modified example from: https://graphql-mesh.com/docs/transforms/resolvers-compos
 
     transforms:
        -  resolversComposition:
-       -  resolver:  Query.* composer:  ./src/add-fields
+       -  resolver:  Query.* 
+          composer:  ./src/add-fields
 
 The composer file:
 
